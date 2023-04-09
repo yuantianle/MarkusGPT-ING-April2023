@@ -1,7 +1,12 @@
 # MarkusGPT-ING-April2023
-This is a personal GPT4 chatbot whose name is Markus
 
-## The first version of Makus 
+This is a personal GPT4/3.5 chatbot whose name is Markus
+
+- [x] First UI for basic GPT chat model.
+- [x] Assign safty info to back end.
+- [ ] Add prompt function.
+
+## The first version of Makus (04/08/2023)
 
 (Source ref. [Build ChatGPT AI Tool in React JS | React JS Project with Working Example using OpenAI API](https://www.youtube.com/watch?v=vAO1fxifJIs))
 
