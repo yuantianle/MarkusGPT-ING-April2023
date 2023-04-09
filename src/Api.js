@@ -2,9 +2,20 @@
 export const fetchResponse =  async(chat) => {
     try {
         // after depoloyment you should change the fetch URL below
-		var _0x446d=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6D\x61\x72\x6B\x75\x73\x2D\x67\x74\x70\x2D\x73\x65\x72\x76\x65\x72\x2D\x61\x70\x72\x69\x6C\x32\x30\x32\x33\x2E\x76\x65\x72\x63\x65\x6C\x2E\x61\x70\x70\x2F","\x50\x4F\x53\x54","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x6D\x65\x73\x73\x61\x67\x65","\x6C\x65\x6E\x67\x74\x68","\x73\x74\x72\x69\x6E\x67\x69\x66\x79"];const response= await fetch(_0x446d[0],{method:_0x446d[1],headers:{"\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65":_0x446d[2]},body:JSON[_0x446d[5]]({message:chat[chat[_0x446d[4]]- 1][_0x446d[3]]})})
-        
-		const data = await response.json()
+        const response = await fetch('https://markus-gtp-server-april2023.vercel.app/', { 
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                //This line is for the backend to know what is the intent of the message 
+                //For multiple message: message: chat.map((message)=> message.message).join(" \n ")
+                // I want to change it with only the last message
+                message: chat[chat.length - 1].message 
+            })
+        })
+
+        const data = await response.json()
         return data
     } catch (error) {
         console.log(error);
