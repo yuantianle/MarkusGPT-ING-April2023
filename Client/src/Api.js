@@ -2,7 +2,7 @@
 export const fetchResponse =  async(chat) => {
     try {
         // after depoloyment you should change the fetch URL below
-        const response = await fetch('https://markus-gpt-ing-april2023.vercel.app/', { 
+        const response = await fetch('https://markus-gtp-server-april2023.vercel.app/', { 
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
