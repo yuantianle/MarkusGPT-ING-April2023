@@ -16,3 +16,5 @@ This is a personal GPT4/3.5 chatbot whose name is Markus. Please check the websi
 ![image](./Images/matrix.gif)
 
 ## The second version of Makus + Prompt bubbles 😎 (04/09/2023)
+
+![image](./Images/matrix2.gif)
