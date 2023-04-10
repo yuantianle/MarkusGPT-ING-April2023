@@ -1,5 +1,5 @@
 import { useDrag } from "react-dnd";
-import { ItemTypes } from "./Constants/itemTypes";
+import { ItemTypes } from "./Constants/ItemTypes";
 
 const DraggablePromptBubble = ({ promptText }) => {
   const [{ isDragging }, drag] = useDrag(() => ({

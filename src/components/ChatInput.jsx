@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ItemTypes } from "./Constants/itemTypes";
+import { ItemTypes } from "./Constants/ItemTypes";
 import { useDrop } from "react-dnd";
 
 //`sendMessage` is a function that is passed down from the App.jsx component. It is used to send the message to the chat body component. The `loading` prop is used to show a loading gif when the message is being sent to the server.
