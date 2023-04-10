@@ -5,7 +5,7 @@ This is a personal GPT4/3.5 chatbot whose name is Markus. Please check the websi
 - [x] First UI for basic GPT chat model.
 - [x] Assign safty info to back end.
 - [x] Add prompt function.
-- [] Optimize prompt interface.
+- [ ] Optimize prompt interface.
 
 ## The first version of Makus (04/08/2023)
 
